@@ -1,29 +1,23 @@
 Selenium2Library
 ================
 
-Selenium2Library is a web testing library for `Robot Framework`_
-that uses the Selenium_ tool internally. The project is hosted on
-GitHub_ and downloads can be found from PyPI_.
+Selenium2Library 库是`Robot Framework`的Web测试库
+在内部使用Selenium_ tool。该项目由GitHub下载.也可以从PyPI_找到。
 
-Starting from version 3.0, Selenium2Library is renamed to SeleniumLibrary_
-and this project exists mainly to help with transitioning.
+从3.0版本开始，将Selenium2Library改名为SeleniumLibrary
+这个项目主要用于帮助过渡。
 
-Versions
+版本
 --------
 
-Selenium2Library 3.0 and newer extend the new SeleniumLibrary_ and thus
-contain exactly the same code and functionality. There have been lot of
-internal changes in the library, but external functionality provided by
-keywords should be fully backwards compatible. Libraries and tools using
-Selenium2Library internally may need to be updated to support
-Selenium2Library 3.0, though. Selenium2Library 1.8 is the latest, and last,
-legacy version with the old architecture and code.
+Selenium2Library 3.0 和更新SeleniumLibrary包含完全相同的代码和功能。已经有很多
+library内部的变化，但外部的功能关键词应该完全向后兼容。library和tools使用内部的Selenium2Library可能需要更新以支持.然而，Selenium2Library 3.0, though. Selenium2Library 1.8是最新的，也是最后一个，旧版本与旧的架构和代码。
 
-Selenium2Library 3.0 supports Python 2.7 as well as Python 3.3 and newer.
-Selenium2Library 1.8 supports Python 2.6-2.7.
+Selenium2Library 3.0支持Python 2.7以及Python 3.3和更新。
+Selenium2Library 1.8支持Python 2.62.7。
 
-Keyword documentation
----------------------
+关键词文档
+--------------------
 
 - `Selenium2Library 3.0`__ (latest)
 - `Selenium2Library 1.8`__ (legacy)
@@ -31,55 +25,48 @@ Keyword documentation
 __ http://robotframework.org/Selenium2Library/Selenium2Library.html
 __ http://robotframework.org/Selenium2Library/Selenium2Library-1.8.0.html
 
-Installation
-------------
+安装
+--------------
 
-The recommended approach to install Selenium2Library, regardless the version,
-is using pip_.
+不管版本如何，推荐安装Selenium2Library的方法，
+正在使用PIPI。
 
-Install (or upgrade) the latest Selenium2Library version::
+安装（或升级）最新的Selenium2Library版本：
 
-    pip install --upgrade robotframework-selenium2library
+	pip install --upgrade robotframework-selenium2library
 
-Install the legacy Selenium2Library 1.8.0 version::
+安装传统的Selenium2Library 1.8.0 版本：
 
-    pip install robotframework-selenium2library==1.8.0
+	pip install robotframework-selenium2library==1.8.0
 
-Migrating to SeleniumLibrary
-----------------------------
+迁移到SeleniumLibrary
+------------------------
 
-Existing Selenium2Library users should start migrating to the
-SeleniumLibrary_. For most users this should be a simple procedure:
+现有的Selenium2Library用户应该开始迁移到
+SeleniumLibrary对于大多数用户来说，这应该是一个简单的过程：
 
-1. Install the latest Selenium2Library as explained above. This installs
-   both SeleniumLibrary and Selenium2Library, and in fact Selenium2Library
-   is nowadays just a thin wrapper for SeleniumLibrary.
+1。安装上面所解释的最新的Selenium2Library。此安装
+SeleniumLibrary和Selenium2Library，事实上Selenium2Library
+现在对SeleniumLibrary来说只是一个薄薄的包装纸。
 
-2. Execute tests normally to see are there problems.
+2。通常执行测试以查看是否存在问题。
 
-3. If problems are encountered, try on investigate why they occur. Possible
-   problems can be divided into two categories:
+三。如果遇到问题，试着调查它们为什么会发生。可能的
+问题可分为两类：
 
-   - If a keyword provided by the library itself has changed, take a look at
-     `SeleniumLibrary 3.0 release notes`_ to see is it a known backwards
-     incompatible change. If it isn't, you may have encountered a regression
-     that ought to be reported to `SeleniumLibrary issue tracker`_.
+-如果库本身提供的关键字已经更改，请查看
+“SeleniumLibrary3.0版本注释”参见
+不相容的变化。如果不是，你可能遇到了回归。
+这应该被报告为“SeleniumLibrary问题跟踪器”。
 
-   - If a library using Selenium2Library does not work anymore, it is likely
-     due to the large internal changes in SeleniumLibrary 3.0. Report the
-     problem to the maintainers of the broken library or fix the problem
-     yourself if you are the maintainer.
+如果Selenium2Library无法使用，很有可能是由于selenium2library3.0内部变化很大，报告给seleniumlibrary维护人员的问题以解决问题。如果你是维护者。你可以在各种“支持”上寻求帮助。
 
-   Regardless the problem, you can always ask help on various `support
-   channels`_.
+4。如果没有问题发生或问题解决后，你就可以开始了。
+更改库导入使用“SeleniumLibrary”代替
+‘Selenium2Library’。同样的所有关键字使用形式
+‘Selenium2Library的标题应该是‘需要更新’。
 
-4. If no problems occur or after problems have been resolved, you can start
-   changing library imports to use ``SeleniumLibrary`` instead of
-   ``Selenium2Library``. Also all keyword usages in form like
-   ``Selenium2Library.Title Should Be`` need to be updated.
-
-5. After test data has been updated, Selenium2Library installation can
-   be removed altogether.
+5。在测试数据被更新后，Selenium2Library可以删除。
 
 .. _Robot Framework: http://robotframework.org
 .. _Selenium: http://seleniumhq.org
