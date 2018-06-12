@@ -40,5 +40,11 @@ with transitioning to the new project. See
 [https://github.com/robotframework/SeleniumLibrary|SeleniumLibrary] and
 [https://github.com/robotframework/Selenium2Library|Selenium2Library]
 project pages for more information.
+*注意：自从3版以来，Selenium2Library已经改名为SeleniumLibrary。
+如今，Selenium2Library只是SeleniumLibrary的一个薄薄的包装物。
+过渡到新项目。见
+[https://github.com/robotframework/SeleniumLibrary|SeleniumLibrary] and
+[https://github.com/robotframework/Selenium2Library|Selenium2Library]
+项目页面获取更多信息。
 ---
 """ + intro
